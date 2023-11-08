@@ -1,4 +1,4 @@
-<p style="width:50px; height:50px; display: block; ">
+<p style="width:20px; height:20px; display: block; ">
 <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/discord.svg" />
 </p>
 
