@@ -19,18 +19,14 @@ $listaCategorias = Categorias::seleccionar_categoriaTB();
     </header>
     <main>
         <h1 class="subt" >Listado de Categorías</h1>
-
-        <!-- CREATE TABLE RENDER -->
         <div class="tabla">
             <table>
-                <!-- TABLE HEAD -->
                 <thead>
                     <tr>
                         <th>ID</th>
                         <th>Nombre</th>
                     </tr>
                 </thead>
-                <!-- TABLE BODY -->
                 <tbody>
                     <?php 
                     foreach ($listaCategorias as $categoria) { ?>
@@ -49,10 +45,7 @@ $listaCategorias = Categorias::seleccionar_categoriaTB();
 
         <a href="views/categorias.html?agregar">Agregar Categoría</a>
     </main>
-
-    <!-- PIÉ DE PÁGINA -->
     <footer>
-        <!-- AUTOR -->
         <span class="author">Alexis Jardin</span>
     </footer>
 </body>

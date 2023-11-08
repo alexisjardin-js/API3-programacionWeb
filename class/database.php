@@ -4,7 +4,7 @@
 class Database {
     private $gbd;
 
-    //! DEFINE FUNCTION TO ESTABLISH DB CONNECTION
+    //! DEFINIMOS FUNCIÓN PARA ESTABLECER CONEXIÓN DB
     function __construct($driver, $database, $host, $user, $pass) {
         $coneccion = $driver . ":dbname=" . $database . ";host=$host";
         $this -> gbd = new PDO($coneccion, $user, $pass);

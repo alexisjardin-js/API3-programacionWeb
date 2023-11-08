@@ -15,11 +15,8 @@ $listaProductos = Productos::seleccionar_productosTB();
 <body>
     <main>
         <h1 class= "subt">Listado de Productos</h1>
-
-        <!-- CREATE TABLE RENDER -->
         <div class="tabla-container">
             <table class= "tabla">
-                <!-- TABLE HEAD -->
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -30,7 +27,6 @@ $listaProductos = Productos::seleccionar_productosTB();
                         <th>Categoría</th>
                     </tr>
                 </thead>
-                <!-- TABLE BODY -->
                 <tbody>
                     <?php
                     $rutaCarpetaImagenes = '../assets/img/'; // Ruta de la carpeta de imágenes
@@ -54,10 +50,7 @@ $listaProductos = Productos::seleccionar_productosTB();
 
         <a href="views/productos.html?agregar">Agregar Producto</a>
     </main>
-
-    <!-- PIÉ DE PÁGINA -->
     <footer>
-        <!-- AUTOR -->
         <span class="author">Alexis Jardin</span>
     </footer>
 </body>
