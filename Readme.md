@@ -1,6 +1,3 @@
-<p style="width:20px; height:20px; display: block; ">
-<img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/discord.svg" />
-</p>
 
 ## Material de apoyo a la charla que se realizo en discord.
 
