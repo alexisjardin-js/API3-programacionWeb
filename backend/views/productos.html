@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/estilos.css">
+    <title>Formulario Productos</title>
+</head>
+
+<body>
+    <main>
+        <h2 class="subt">Alta de Productos</h2>
+        <img id="imagen" src="../../assets/img/logo.png" alt="logo">
+        <form class="form" action="../productos.php" id="formulario_productos" enctype="multipart/form-data"
+            method="POST">
+            <input type="hidden" name="action" value="guardar">
+            <label for="nombre_producto">Nombre:</label>
+            <input type="text" id="nombre_producto" name="nombre_producto">
+            <label for="descripcion_productos">Descripción:</label>
+            <input type="text" id="descripcion_producto" name="descripcion_producto">
+            <label for="precio_producto">Precio:</label>
+            <input type="text" id="precio_producto" name="precio_producto">
+            <label for="categoria_producto">Categoria:</label>
+            <input type="text" id="categoria_producto" name="categoria_producto">
+            <label for="imagen_producto">Imagen:</label>
+            <input type="file" id="imagen_producto" name="imagen_producto" accept="image/*">
+            <button type="reset" class="btn">Cancelar</button>
+            <button type="submit" class="btn">Guardar</button>
+            <br><br>
+            <p>Alexis Jardin</p>
+        </form>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <Script src="../../assets/js/validaciones.js"></Script>
+    </main>
+</body>
+
+</html>

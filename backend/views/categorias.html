@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/estilos.css">
+    <title>Formulario Categorias</title>
+</head>
+
+<body>
+    <main>
+        <h2 class="subt">Alta de Categoría</h2>
+        <img id="imagen" src="../../assets/img/logo.png" alt="logo">
+        <form class="form" action="../categorias.php" id="formulario_categorias" enctype="multipart/form-data"
+            method="POST">
+            <label for="nombre_categoria">Nombre de la Categoría que desea agregar:</label>
+            <input type="hidden" name="action" value="guardar">
+            <input type="text" id="nombre_categoria" name="nombre_categoria">
+            <button type="reset" class="btn">Cancelar</button>
+            <button type="submit" class="btn">Guardar</button>
+            <br><br>
+            <p>Alexis Jardin</p>
+        </form>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <Script src="../../assets/js/validaciones.js"></Script>
+    </main>
+</body>
+
+</html>
