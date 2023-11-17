@@ -1,5 +1,5 @@
 
-## Material de apoyo a la charla que se realizo en discord.
+## Material de apoyo a la charla que se realizo en discord :-).
 
 <p style="width:600px; height:300px; display: block; margin: 0 auto;">
   <img src="./assets/img/banner-readme.png" alt="Logo">
