@@ -1,8 +1,8 @@
 -- Crear la base de datos
-CREATE DATABASE MIPROYECTO;
+CREATE DATABASE MIPROYECTOS;
 
 -- Seleccionar la base de datos
-USE MIPROYECTO;
+USE MIPROYECTOS;
 
 -- Crear la tabla "categorias"
 CREATE TABLE categorias (
