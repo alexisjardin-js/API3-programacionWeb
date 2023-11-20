@@ -13,16 +13,27 @@ $listaProductos = Productos::seleccionar_productosTB();
 </head>
 
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="./lista_productos.php">Home</a></li>
+                    <li><a href="./lista_categorias.php">Lista de Categorias</a></li>
+                    <li><a href="./lista_productos.php">Lista de Productos</a></li>
+                    <li><a href="./views/categorias.html">Registrar Nueva Categoria</a></li>
+                    <li><a href="./views/productos.html">Registrar Nuevo Producto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <main>
         <h1 class= "subt">Listado de Productos</h1>
         <div class="tabla-container">
             <table class= "tabla">
                 <thead>
                     <tr>
-                        <th>ID</th>
                         <th>Nombre</th>
                         <th>Descripción</th>
-                        <th>Precio</th>
                         <th>Imagen</th>
                         <th>Categoría</th>
                     </tr>
@@ -35,12 +46,10 @@ $listaProductos = Productos::seleccionar_productosTB();
                         $rutaCompletaImagen = $rutaCarpetaImagenes . $nombreImagen; // Ruta completa de la imagen
 
                         echo '<tr>';
-                        echo '<td>' . $producto['id'] . '</td>';
                         echo '<td>' . $producto['nombre_producto'] . '</td>';
                         echo '<td>' . $producto['descripcion_producto'] . '</td>';
-                        echo '<td>' . $producto['precio_producto'] . '</td>';
                         echo '<td><img src="' . $rutaCompletaImagen . '" alt="Imagen del producto"></td>';
-                        echo '<td>' . $producto['categoria_producto'] . '</td>';
+                        echo '<td>' . $producto['nombre_producto'] . '</td>';
                         echo '</tr>';
                     }
                     ?>

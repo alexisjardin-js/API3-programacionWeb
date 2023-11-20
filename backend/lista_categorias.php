@@ -15,7 +15,17 @@ $listaCategorias = Categorias::seleccionar_categoriaTB();
 
 <body>
     <header>
-        <nav></nav>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="./lista_productos.php">Home</a></li>
+                    <li><a href="./lista_categorias.php">Lista de Categorias</a></li>
+                    <li><a href="./lista_productos.php">Lista de Productos</a></li>
+                    <li><a href="./views/categorias.html">Registrar Nueva Categoria</a></li>
+                    <li><a href="./views/productos.html">Registrar Nuevo Producto</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
         <h1 class="subt" >Listado de Categorías</h1>

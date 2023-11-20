@@ -66,12 +66,7 @@ p {
     margin: px 0;
 }
 
-/* Estilos para la tabla */
-.table-container {
-    margin: 20px;
-    border: 1px solid #ddd;
-}
-
+/* estilos para la tabla*/
 table {
     width: calc(100% - 50px);
     margin: 15px;
@@ -115,4 +110,49 @@ td img {
     width: 100px;
     height: 100px;
     object-fit: contain;
+}
+
+/* Estilos del navbar ------> esto se agrego nuevo */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar {
+    font-size: 20px;
+    background-color: #333;
+    /* Color oscuro de fondo */
+    padding: 20px 0;
+    /* Espacio interior superior e inferior */
+    color: white;
+    /* Color del texto */
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Cambiar el color del enlace al pasar el mouse por encima */
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+    /* Cambiar al color azul al pasar el mouse */
+}
+
+/* Estilos para la tabla */
+.table-container {
+    margin: 20px;
+    border: 1px solid #ddd;
 }

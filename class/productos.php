@@ -69,9 +69,9 @@ class Productos {
         "nombre_producto, descripcion_producto, precio_producto, categoria_producto, imagen_producto","?","?","?","?","?",array($this -> nombre, $this -> descripcion, $this -> precio, $this -> categoria, $this -> imagen));
     }
     
-   
+
     //! DEFINIMOS LA FUNCIÓN PARA SELECCIONAR LA TABLA PRODUCTOS
-    /* static public function seleccionar_productosTB() {
+    static public function seleccionar_productosTB() {
         $db = new Database(DRIVER, DB, HOST, USER, PASS);
         $join = 'categorias ON categorias.id = productos.categoria_producto';
         $columns = array(
@@ -80,17 +80,9 @@ class Productos {
             "productos.descripcion_producto",
             "productos.precio_producto",
             "productos.imagen_producto",
-            "categorias.nombre_categoria",
+            "categorias.nombre_categoria"
         );
-        return $db -> select(TABLE, $columns, $join);
-    } */
-    //! DEFINIMOS LA FUNCIÓN PARA SELECCIONAR LA TABLA PRODUCTOS
-    static public function product_select() {
-        $db = new Database(DRIVER, DB, HOST, USER, PASS);
-        
-    
-    
-    return $db -> select("productos");
-}
+        return $db->select(TABLE, $columns, $join);
+    }
 
 }

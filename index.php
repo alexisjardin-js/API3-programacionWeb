@@ -1,3 +1,3 @@
 <?php
-    header("Location: ./backend/views/home.html");
-    exit;
+ header ("Location: ./backend/lista_productos.php")
+?>
